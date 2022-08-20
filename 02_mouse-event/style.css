@@ -1,0 +1,16 @@
+* {cursor: none !important;}
+#mouse-pointer {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    background-color: rgb(211, 47, 47);
+    mix-blend-mode: difference;
+    z-index: 999;
+    pointer-events: none;
+    transition: transform 0.3s;
+}
+#mouse-pointer.hover {transform: scale(6);}
