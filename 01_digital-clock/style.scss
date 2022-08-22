@@ -13,9 +13,9 @@ body {
     text-align: center;
   }
   .clock-outside {
-    width: 40%;
-    height: 50%;
-    background-color: #000;
+    width: 670px;
+    height: 360px;
+    background: linear-gradient(#000, #222);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -42,9 +42,23 @@ body {
             align-items: center;
             font-weight: 400;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-            span {
-                font-size: 4em;
+            div:first-child {
+                margin-right: 20px;
+                span {
+                    font-size: 8em;
+                }
             }
+            div:last-child {
+                display: flex;
+                flex-flow: column;
+                #time {
+                    font-size: 2em;
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-size: 4em;
+                }
+            } 
         }
     }
   }
