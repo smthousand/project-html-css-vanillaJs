@@ -47,14 +47,14 @@ body {background-color: #f2eeee; width: 100%; height: 100vh; display: flex; just
     button {
         cursor: pointer;
         display: block;
-        background-color: #e84848;
+        background-color: #DB3141;
         border: 0;
         padding: 10px 30px;
         font-size: 1.02em;
         color: #fff;
         transition: all 0.3s;
         &:hover {
-            background-color: #cb2b2b;
+            background-color: #A82532;
         }
         &:active {
             transform: scale(0.9);

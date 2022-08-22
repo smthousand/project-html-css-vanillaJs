@@ -26,3 +26,6 @@ formEl.addEventListener("submit", () => {
 function updateLocalStorage() {
     localStorage.setItem('score', JSON.stringify(score));
 }
+
+// 리셋 버튼 만들어보기
+// 마이너스 일 때 색깔 변경해보기
