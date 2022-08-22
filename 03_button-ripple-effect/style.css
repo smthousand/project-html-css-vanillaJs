@@ -3,12 +3,12 @@
 @import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css");
 * {
   font-family: ‘SUIT’, sans-serif !important;
-  line-height: 150% !important;
+  line-height: 180% !important;
   letter-spacing: -0.5px;
 }
 
 body {
-  background-color: #f2eeee;
+  background-color: #15202b;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -18,12 +18,10 @@ body {
 
 .btn {
   text-decoration: none;
-  background-color: #f2eeee;
-  padding: 10px 20px;
+  background-color: #15202b;
+  padding: 50px 60px;
   border-radius: 10px;
-  color: #A19AA1;
-  text-align: center;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  color: #8899a6;
   position: relative;
   overflow: hidden;
 }
@@ -46,4 +44,8 @@ body {
 .btn span {
   position: relative;
   z-index: 99;
+}
+.btn span strong {
+  display: block;
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */
