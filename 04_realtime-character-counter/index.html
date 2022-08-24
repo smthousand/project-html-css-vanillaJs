@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="wrap">
+        <div class="heading">
+            <div class="title-container">
+                <h2>글자수 세기</h2>
+                <h4>300자 이내로 글을 작성해야 할 때 이용해주세요</h4>
+            </div>
+            <div class="counter-container">
+                <p>공백포함 총 <span class="total-counter" id="total-counter">0</span>자</p>
+                <p>공백제외 총 <span class="nospace-counter" id="nospace-counter">0</span>자</p>
+                <p>남은 글자수 총 <span class="remaining-counter" id="remaining-counter">300</span>자</p>
+            </div>
+        </div>
+        <textarea id="textarea" class="textarea" placeholder="300자 이하로 작성할 글을 직접 작성하거나 복사해서 붙여넣기 해주세요" maxlength="300"></textarea>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
