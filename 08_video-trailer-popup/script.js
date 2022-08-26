@@ -11,3 +11,17 @@ function randomBackground() {
 randomBackground()
 
 // 영화 예고편 팝업
+const TrailerBtnEl = document.querySelector('.btn-border');
+const colseIconEl = document.querySelector('.trailer-container > img');
+const trailerContainerEl = document.querySelector('.trailer-container');
+const videoEl = document.querySelector('video');
+
+TrailerBtnEl.addEventListener('click', () => {
+    trailerContainerEl.classList.remove('active');
+})
+
+colseIconEl.addEventListener('click', () => {
+    trailerContainerEl.classList.add('active');
+    videoEl.pause();
+    videoEl.currentTime = 0;
+})
