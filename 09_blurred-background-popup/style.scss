@@ -1,8 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css");
 
-* {font-family: ‘SUIT’, sans-serif !important; line-height: 150% !important; letter-spacing: -.5px; box-sizing: border-box !important;}
-body {width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;}
+* {font-family: ‘SUIT’, sans-serif !important; line-height: 150% !important; letter-spacing: -.5px; box-sizing: border-box !important;;}
+body {width: 100%; height: 100vh; word-break: keep-all;}
+button, .close {cursor: pointer; opacity: 80%; &:hover {opacity: 100%;} transition: all .3s;}
 
 .container {
     width: 100%;
@@ -11,23 +12,81 @@ body {width: 100%; height: 100vh; display: flex; justify-content: center; align-
     justify-content: center;
     align-items: center;
     background: url("images/background.jpeg") no-repeat center;
-    background-size: 120%;
+    background-size: 150%;
+    &.active {
+        filter: blur(100px);
+    }
     button {
         background: #fff;
         border: none;
         padding: 18px 36px 14px;
         font-size: 1.2em;
         color: #3C591E;
-        transition: all .3s;
-        &:hover {
-            transform: scale(105%, 95%);
-        }
     }
 
 }
 
 .modal {
-    width: 500px;
-    height: 600px;
+    z-index: 1;
+    background-color: #fff;
+    width: 450px;
+    padding: 70px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    opacity: 1;
+    transition: all .3s;
+    &.active {
+        visibility: hidden;
+        opacity: 0;
+        top: 10%;
+    }
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        path {
+            fill: #3C591E;
+        }
+    }
+    h4 {
+        font-size: 1.7em;
+        line-height: 120% !important;
+        margin: 25px 0 20px;
+        text-align: center;
+        span {
+            background-color: #dfe3dc;
+        }
+    }
+    p {
+        text-align: center;
+        color: #888;
+        margin-bottom: 30px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+        }
+        button {
+            margin: 0 auto;
+            background-color: #3C591E;
+            color: #fff;
+            font-size: 1.17em;
+            border: none;
+            padding: 10px 50px;
+            font-weight: 400;
+        }
+    }
 }

@@ -9,19 +9,22 @@
 </head>
 <body>
     <div class="container">
-        <button class="sub">구독신청 서비스 🌵</button>
+        <button class="sub">구독신청 서비스</button>
     </div>
-    <div class="modal">
-        <img src="images/icon.svg" alt="">
-        <h4>초록마을은 식물처럼 살고자 하는 <br> 파머들이 만드는 뉴스레터입니다.</h4>
-        <p>우리는 식물과 예술을 통해 세상과 소통하고자 하는 독자들을 모집하고 있습니다.<br>
-            식물에 관심사를 두고 독자님들이 원하는 정보를 전달할 수 있습니다. <br>
-            매주 월요일 오전 9시 초록마을과 함께 상쾌한 풀내음을 맡으며 하루를 시작해보아요. <br>
-            우리와 함께하고 싶다면 아래 공란에 이메일 주소를 작성해주세요. <br>
-            곧 웰컴레터로 인사 드릴게요. </p>
+    <div class="modal active">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="close">
+            <g clip-path="url(#clip0_39_7)">
+                <path d="M31.6667 10.6833L29.3167 8.33331L20 17.65L10.6833 8.33331L8.33334 10.6833L17.65 20L8.33334 29.3166L10.6833 31.6666L20 22.35L29.3167 31.6666L31.6667 29.3166L22.35 20L31.6667 10.6833Z" fill="black"/>
+            </g>
+        </svg>
+        <img src="images/icon.svg" alt="초록마을">
+        <h4>초록마을은 파머들이 직접 만드는 뉴스레터입니다.</h4>
+        <p>우리는 식물과 예술을 통해 세상과 소통하고자 하는 독자들을 모집하고 있습니다. <br> 
+            매주 월요일 오전 9시 초록마을과 함께 상쾌한 풀내음을 맡으며 하루를 시작해보세요. <br>
+            아래 공란에 이메일 주소를 작성해주시면 곧 웰컴레터로 인사 드릴게요. 🥬 💚</p>
         <form action="">
-            <input type="email" placeholder="이메일 주소를 입력해주세요">
-            <button>제출</button>
+            <input type="email" placeholder="이메일 주소를 입력해주세요" class="email">
+            <button class="submit">제출</button>
         </form>
     </div>
     <script src="script.js"></script>

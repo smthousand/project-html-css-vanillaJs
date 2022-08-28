@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {font-family: ‘SUIT’, sans-serif !important; line-height: 150% !important; letter-spacing: -.5px; box-sizing: border-box !important;}
+::-webkit-scrollbar {display: none;}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    &::after {
+        content: "";
+        width: 1px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0);
+        background: linear-gradient(rgba(255, 255, 255, 0), white)
+    }
+    video {
+        width: inherit;
+        height: inherit;
+        pointer-events: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: scaleY(1.02);
+    }
+}
+
+.container {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10em;
+    position: relative;
+    &::before {
+        content: url("mouse.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+    h1 {
+        font-size: 5em;
+        font-weight: 900;
+        line-height: 120% !important;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 3em;
+        color: #AA8A00;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+    p {
+        color: #35353b;
+        margin-bottom: 10px;
+        &:last-child {margin-bottom: 0;}
+    }
+}
