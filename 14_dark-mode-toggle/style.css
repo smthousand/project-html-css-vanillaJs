@@ -10,10 +10,73 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
+  transition: 0.3s;
+}
+
+.input {
+  visibility: hidden;
+}
+.input:checked + .label {
+  background-color: #46CF73;
+}
+.input:checked + .label .circle {
+  background-color: #fff;
+}
+.input:checked + .label .circle {
+  -webkit-animation: toggleOn 0.3s linear forwards;
+          animation: toggleOn 0.3s linear forwards;
 }
 
 .label {
-  width: 80px;
+  width: 70px;
   height: 40px;
-  background-color: #ccc;
+  background-color: #84919a;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.label .circle {
+  width: 34px;
+  background-color: #fff;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  -webkit-animation: toggleOff 0.3s linear forwards;
+          animation: toggleOff 0.3s linear forwards;
+}
+
+@-webkit-keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+@-webkit-keyframes toggleOff {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes toggleOff {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=style.css.map */
